@@ -1,0 +1,4 @@
+/node_modules/
+/public/*
+/dist/.sass-cache
+/dist/.jekyll-metadata
