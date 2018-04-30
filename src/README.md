@@ -1,0 +1,1 @@
+# Resources for Webpack to handle
