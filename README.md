@@ -1,23 +1,6 @@
 # Jekyll + Webpack + React
 
-Directory structure
-```
-|-- dist
-| 	|-- <all Jekyll file except _config.yml>
-|-- node_modules
-|-- public
-|	|-- ..
-|-- src
-|	|-- js
-|	|	|-- components
-|	|	|	|-- <React components here>
-|	|	|-- index.js
-|-- _config.yml
-|-- package.json
-|-- webpack.config.js
-```
-
-> Warning: Broken English below!
+**Warning: Broken English below!**  
 
 Before I made this...  
 

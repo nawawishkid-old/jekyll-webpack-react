@@ -4,7 +4,7 @@ module.exports = {
 	mode: 'production',
 	entry: './src/js/index.js',
 	output: {
-		path: path.resolve(__dirname, 'dist/assets/js'),
+		path: path.resolve(__dirname, 'jekyll/assets/js'),
 		filename: 'bundle.js'
 	},
 	module: {

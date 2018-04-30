@@ -23,7 +23,7 @@ twitter_username: nawawishkid
 github_username:  nawawishkid
 
 # Build settings
-source: dist
+source: jekyll
 destination: public
 markdown: kramdown
 
