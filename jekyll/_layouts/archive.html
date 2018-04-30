@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% if page.category %}
+	{% assign archive_type = "Categories" %}
+	{% assign archive_name = page.category %}
+{% elsif page.tag %}
+	{% assign archive_type = "Tags" %}
+	{% assign archive_name = page.tag %}
+{% endif %}
+
+<h1>
+	<small>{{ archive_type }}:</small> {{ archive_name }}
+</h1>
+{% for post in site.posts %}
+	<h3>{{ post.title }}</h3>
+	<p>{{ post.excerpt }}</p>
+{% endfor %}

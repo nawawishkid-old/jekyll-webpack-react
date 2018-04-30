@@ -2,5 +2,34 @@
 layout: default
 ---
 
-<h1>POST</h1>
+<h1>{{ page.title }}</h1>
 {{ content }}
+
+{% if page.categories %}
+	<nav>
+		<span><b>Categories: </b></span>
+
+		{% for cat in page.categories %}
+			{% if cat != page.categories.last %}
+				{% assign comma = ', ' %}
+			{% else %}
+				{% assign comma = '' %}
+			{% endif %}
+
+			<a href="{{ "categories/"  | append: cat | relative_url }}">
+				{{ cat | append: comma }}
+			</a>
+		{% endfor %}
+	</nav>
+{% endif %}
+
+{% if page.tags %}
+	<nav>
+		<span><b>Tags: </b></span>
+		{% for tag in page.tags %}
+			<a href="{{ "tags/"  | append: tag | relative_url }}">
+				#{{ tag }}
+			</a>
+		{% endfor %}
+	</nav>
+{% endif %}

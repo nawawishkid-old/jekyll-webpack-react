@@ -1,0 +1,13 @@
+.header-bar {
+	width: 100%;
+	height: 42px;
+}
+
+.header-bar.fixed {
+	position: fixed;
+}
+
+.header-bar [class*="col"] {
+	display: flex;
+	align-items: center;
+}
