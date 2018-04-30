@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Input = ({ label, text, type, id, value, handleChange }) => (
+const Input = ({ label, type, name, id, value, handleChange }) => (
 	<div className="form-group">
-		<label htmlFor={label}>{text}</label>
+		<label htmlFor={id}>{label}</label>
 		<input
 			type={type}
 			className="form-control"
+			name={name}
 			id={id}
 			value={value}
 			onChange={handleChange}

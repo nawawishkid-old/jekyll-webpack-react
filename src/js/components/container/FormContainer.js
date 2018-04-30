@@ -23,10 +23,10 @@ class FormContainer extends Component {
 		return (
 			<form id="article-form">
 				<Input
-					text="Title"
-					label="title"
+					label="Form from ReactJS!"
 					type="text"
-					id="title1"
+					name="title"
+					id="title"
 					value={title}
 					handleChange={this.handleChange}
 				/>
