@@ -1,5 +1,5 @@
 ---
 layout: archive
-title: Jekyll
+title: New tag
 tag: new-tag
 ---
